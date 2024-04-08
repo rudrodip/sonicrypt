@@ -15,7 +15,7 @@ int confirmSub;
 WebsocketsClient client;
 HTTPClient http;
 
-char *getWsEndpoint(const char *net)
+const char *getWsEndpoint(const char *net)
 {
     if (strcmp(net, "devnet") == 0)
     {
@@ -35,7 +35,7 @@ char *getWsEndpoint(const char *net)
     }
 }
 
-char *getHttpEndpoint(const char *net)
+const char *getHttpEndpoint(const char *net)
 {
     if (strcmp(net, "devnet") == 0)
     {
